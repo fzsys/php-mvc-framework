@@ -1,0 +1,10 @@
+#отключаем екранирование кавычек на уровне вебсервера
+php_flag magic_quotes_gpc Off
+
+AddDefaultCharset utf-8
+DirectoryIndex index.php
+
+#перенаправляем все запросы пользователя на index.php
+RewriteEngine on
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteRule ^(.*) index.php
