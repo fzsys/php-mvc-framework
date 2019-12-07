@@ -9,6 +9,6 @@ class TeachersExpansion
     use Singleton;
 
     public function expansion($args = []) {
-
+        $this->title = 'test title from axpansion';
     }
 }

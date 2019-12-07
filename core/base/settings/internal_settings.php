@@ -11,6 +11,7 @@ if (!defined('VG_ACCESS')) {
  */
 const TEMPLATE = 'templates/default/';
 const ADMIN_TEMPLATE = 'core/admin/views/';
+const UPLOAD_DIR = '/userfiles/';
 
 /**
  * Настройки куки для пользователей

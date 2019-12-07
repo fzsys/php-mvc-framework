@@ -32,6 +32,8 @@ class ShopSettings
         'test' => [4,2,3],
     ];
 
+//    private $expansion = 'core/plugin/expansion/';
+
     /**
      * Метод получения свойства обьекта
      */

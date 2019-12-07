@@ -3,6 +3,7 @@
 namespace core\admin\controllers;
 
 use core\base\settings\Settings;
+use core\base\settings\ShopSettings;
 
 class ShowController extends BaseAdmin
 {
@@ -11,12 +12,18 @@ class ShowController extends BaseAdmin
         $this->execBase();
         $this->createTableData();
         $this->createData(['fields' => 'content']);
-        return $this->expansion();
+        return $this->expansion(get_defined_vars());
     }
 
     protected function outputData()
     {
+        $args = func_get_arg(0);
+        $vars = $args ? $args : [];
 
+        if (!$this->template) {
+            $this->template = ADMIN_TEMPLATE . 'show';
+        }
+        $this->content = $this->render($this->template, $vars);
     }
 
     protected function createData($arr = [])

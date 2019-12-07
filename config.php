@@ -9,7 +9,7 @@ if (!defined('VG_ACCESS')) {
 /**
  * Константа абсолютного пути сайта
  */
-const SITE_URL = 'http://mvc';
+const SITE_URL = 'http://mvc.loc';
 
 /**
  * Константа корневой директории сайта (для возможности использования поддиректорий)
@@ -20,6 +20,6 @@ const PATH = '/';
  * Константы подкючения к базе данных
  */
 const HOST = 'localhost';
-const USER = 'root';
-const PASS = '';
+const USER = 'admin';
+const PASS = '123qwE';
 const DB_NAME = 'mvc';

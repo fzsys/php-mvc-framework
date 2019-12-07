@@ -13,6 +13,10 @@ abstract class BaseController
 
     use \core\base\controllers\BaseMethods;
 
+    protected $header;
+    protected $content;
+    protected $footer;
+
     /**
      * Свойство хранения генерируемо страницы
      */
@@ -39,6 +43,7 @@ abstract class BaseController
      */
     protected $parameters;
 
+    protected $template;
     protected $styles;
     protected $scripts;
 
@@ -94,6 +99,7 @@ abstract class BaseController
 
     protected function render($path = '', $parameters = [])
     {
+
         extract($parameters);
 
         if (!$path) {
