@@ -9,8 +9,8 @@ if (!defined('VG_ACCESS')) {
 /**
  * Пути к шаблонам сайта
  */
-const TEMPLATE = 'templates/default';
-const ADMIN_TEMPLATE = 'core/admin/views';
+const TEMPLATE = 'templates/default/';
+const ADMIN_TEMPLATE = 'core/admin/views/';
 
 /**
  * Настройки куки для пользователей
@@ -38,8 +38,8 @@ const ADMIN_CSS_JS = [
     'scripts' => [],
 ];
 const USER_CSS_JS = [
-    'styles' => [],
-    'scripts' => [],
+    'styles' => ['css/styles.css'],
+    'scripts' => ['js/styles.js'],
 ];
 
 use core\base\exceptions\RouteException;

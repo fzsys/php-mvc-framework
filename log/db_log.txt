@@ -1,0 +1,16 @@
+Fault:03-12-2019 10:48:01 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 42
+
+Fault:03-12-2019 10:49:30 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 42
+
+Fault:03-12-2019 10:52:23 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 42
+
+Fault:03-12-2019 10:53:36 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 42
+

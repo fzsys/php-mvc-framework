@@ -1,0 +1,4 @@
+Fault:05-12-2019 20:01:48 - Class core\user\controllers\Robots.txtController does not exist
+file C:\OSPanel\domains\mvc\public\core\base\controllers\BaseController.php
+In line 62
+

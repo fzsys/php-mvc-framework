@@ -15,20 +15,30 @@ header('Content-type:text/html;charset=utf-8');
 session_start();
 
 /**
- * Конфиг для хранения базовых настроек
+ * Подключаем конфиг для хранения базовых настроек
  */
 require_once 'config.php';
 
 /**
- * Конфиг для хранения всех внутренних настроек (роутниг, доступы, пути к шаблонам)
+ * Подключаем конфиг для хранения всех внутренних настроек (роутниг, доступы, пути к шаблонам)
  */
 require_once 'core/base/settings/internal_settings.php';
 
+/**
+ * Подключаем неймспейсы
+ */
+
+use core\base\exceptions\DbException;
 use core\base\exceptions\RouteException;
 use core\base\controllers\RouteController;
 
+/**
+ * Запускаем роутинг
+ */
 try {
-    RouteController::getInstance()->route();
+    RouteController::instance()->route();
 } catch (RouteException $e) {
+    exit ($e->getMessage());
+} catch (DbException $e) {
     exit ($e->getMessage());
 }
