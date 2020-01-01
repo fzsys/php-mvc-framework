@@ -11,7 +11,7 @@ if (!defined('VG_ACCESS')) {
  */
 const TEMPLATE = 'templates/default/';
 const ADMIN_TEMPLATE = 'core/admin/views/';
-const UPLOAD_DIR = '/userfiles/';
+const UPLOAD_DIR = 'userfiles/';
 
 /**
  * Настройки куки для пользователей
@@ -35,12 +35,12 @@ const QTY_LINKS = 3;
  * Пути к стилям и скриптам
  */
 const ADMIN_CSS_JS = [
-    'styles' => [],
+    'styles' => ['css/main.css'],
     'scripts' => [],
 ];
 const USER_CSS_JS = [
-    'styles' => ['css/styles.css'],
-    'scripts' => ['js/styles.js'],
+    'styles' => [],
+    'scripts' => [],
 ];
 
 use core\base\exceptions\RouteException;

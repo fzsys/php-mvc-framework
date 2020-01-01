@@ -1,4 +1,76 @@
-Fault:05-12-2019 20:01:48 - Class core\user\controllers\Robots.txtController does not exist
+Fault:08-12-2019 19:48:09 - отсутствует шаблон - core/admin/views/add
 file C:\OSPanel\domains\mvc\public\core\base\controllers\BaseController.php
-In line 62
+In line 124
+
+Fault:08-12-2019 19:48:10 - отсутствует шаблон - core/admin/views/add
+file C:\OSPanel\domains\mvc\public\core\base\controllers\BaseController.php
+In line 124
+
+Fault:11-12-2019 7:07:44 - отсутствует шаблон - core/admin/views/add
+file C:\OSPanel\domains\mvc\public\core\base\controllers\BaseController.php
+In line 124
+
+Fault:17-12-2019 11:45:53 - Неверное имя файла для подключения - core/user/controllers/CoreController
+file C:\OSPanel\domains\mvc\public\core\base\settings\internal_settings.php
+In line 56
+
+Fault:17-12-2019 11:46:11 - Неверное имя файла для подключения - core/user/controllers/CoreController
+file C:\OSPanel\domains\mvc\public\core\base\settings\internal_settings.php
+In line 56
+
+Fault:17-12-2019 11:46:15 - Неверное имя файла для подключения - core/user/controllers/CoreController
+file C:\OSPanel\domains\mvc\public\core\base\settings\internal_settings.php
+In line 56
+
+Fault:17-12-2019 11:46:18 - Неверное имя файла для подключения - core/user/controllers/CoreController
+file C:\OSPanel\domains\mvc\public\core\base\settings\internal_settings.php
+In line 56
+
+Fault:17-12-2019 11:50:01 - Неверное имя файла для подключения - core/user/controllers/CoreController
+file C:\OSPanel\domains\mvc\public\core\base\settings\internal_settings.php
+In line 56
+
+Fault:17-12-2019 11:53:13 - Неверное имя файла для подключения - core/user/controllers/CoreController
+file C:\OSPanel\domains\mvc\public\core\base\settings\internal_settings.php
+In line 56
+
+Fault:17-12-2019 12:03:26 - Неверное имя файла для подключения - core/user/controllers/CoreController
+file C:\OSPanel\domains\mvc\public\core\base\settings\internal_settings.php
+In line 56
+
+Fault:17-12-2019 12:04:15 - Неверное имя файла для подключения - core/user/controllers/CoreController
+file C:\OSPanel\domains\mvc\public\core\base\settings\internal_settings.php
+In line 56
+
+Fault:17-12-2019 12:04:58 - Неверное имя файла для подключения - core/user/controllers/CoreController
+file C:\OSPanel\domains\mvc\public\core\base\settings\internal_settings.php
+In line 56
+
+Fault:18-12-2019 13:25:39 - Class core\user\controllers\Robots.txtController does not exist
+file C:\OSPanel\domains\mvc\public\core\base\controllers\BaseController.php
+In line 69
+
+Fault:18-12-2019 13:44:07 - Не найден шаблон C:/OSPanel/domains/mvc/public/core/admin/views/include/form_templatestext.php
+file C:\OSPanel\domains\mvc\public\core\admin\views\add.php
+In line 41
+
+Fault:18-12-2019 15:19:46 - Неверное имя файла для подключения - core/user/controllers/CoreController
+file C:\OSPanel\domains\mvc\public\core\base\settings\internal_settings.php
+In line 56
+
+Fault:29-12-2019 9:21:52 - Неверное имя файла для подключения - core/admin/controllers/EditController
+file C:\OSPanel\domains\mvc\public\core\base\settings\internal_settings.php
+In line 56
+
+Fault:29-12-2019 17:10:23 - Class core\admin\controllers\Add%3EController does not exist
+file C:\OSPanel\domains\mvc\public\core\base\controllers\BaseController.php
+In line 69
+
+Fault:29-12-2019 17:12:19 - Class core\admin\controllers\Add%3EController does not exist
+file C:\OSPanel\domains\mvc\public\core\base\controllers\BaseController.php
+In line 69
+
+Fault:29-12-2019 17:13:11 - Class core\admin\controllers\Add%3EController does not exist
+file C:\OSPanel\domains\mvc\public\core\base\controllers\BaseController.php
+In line 69
 

@@ -86,6 +86,7 @@ abstract class BaseModel extends BaseModelMethods
      * @param $table
      * @param array $set
      * 'fields' => ['id', 'name']
+     * 'no_concat' => true|false, - not concat table name to fields and WHERE on TRUE
      * 'where' => ['id' => 1, 'name' => 'Masha', 'surname' => 'sergeevna'],
      * 'operand' => ['<>', '='],
      * 'condition' => ['AND'],
@@ -170,15 +171,10 @@ abstract class BaseModel extends BaseModelMethods
         $set['except'] = is_array($set['except']) && !empty($set['except']) ? $set['except'] : false;
 
         $insert_arr = $this->createInset($set['fields'], $set['files'], $set['except']);
+        $query = "INSERT INTO $table {$insert_arr['fields']} VALUES {$insert_arr['values']}";
 
-        if ($insert_arr) {
+        return $this->query($query, 'c', $set['return_id']);
 
-            $query = "INSERT INTO $table ({$insert_arr['fields']}) VALUES ({$insert_arr['values']})";
-
-            return $this->query($query, 'c', $set['return_id']);
-        }
-
-        return false;
     }
 
     final public function edit($table, $set = [])
@@ -249,7 +245,6 @@ abstract class BaseModel extends BaseModelMethods
      *          'group_condition' => 'AND',
      *      ],
      *  ]
-     *
      * @return array|bool|mixed
      * @throws DbException
      */

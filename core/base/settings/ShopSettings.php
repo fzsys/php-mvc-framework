@@ -6,7 +6,9 @@ use core\base\controllers\Singleton;
 
 class ShopSettings
 {
-    use Singleton;
+    use Singleton {
+        instance as traitInstance;
+    }
 
     /**
      * Свойство хранения основных настроек из класса Settings
@@ -39,19 +41,19 @@ class ShopSettings
      */
     static public function get($property)
     {
-        return self::getInstance()->$property;
+        return self::instance()->$property;
     }
 
     /**
      * Метод получения екземпляра класса + склейка свойст из основного класса настроек
      */
-    static private function getInstance()
+    static public function instance()
     {
         if (self::$_instance instanceof self) {
             return self::$_instance;
         }
 
-        self::instance()->baseSettings = Settings::instance();
+        self::traitInstance()->baseSettings = Settings::instance();
         $baseProperties = self::$_instance->baseSettings->clueProperties(get_class());
         self::$_instance->setProperty($baseProperties);
         return self::$_instance;

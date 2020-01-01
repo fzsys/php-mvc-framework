@@ -9,7 +9,7 @@ class Settings
     /**
      * Подключаем трейт синглтон
      */
-     use Singleton;
+    use Singleton;
 
     /**
      * Свойство хранения роутов
@@ -41,20 +41,67 @@ class Settings
             'inputMethod' => 'inputData',
             'outputMethod' => 'outputData',
         ],
-        'test' => [1,2,3],
+        'test' => [1, 2, 3],
     ];
 
     private $defaultTable = 'teachers';
+
+    private $formTemplates = PATH . 'core/admin/views/include/form_templates/';
+
+    private $projectTables = [
+        'teachers' => [
+            'name' => 'Учителя',
+        ],
+        'students' => [
+            'name' => 'Ученики',
+        ],
+    ];
 
     /**
      * Свойство хранения шаблонов для основных полей
      */
     private $templateArr = [
-        'text' => ['name', 'phone', 'address'],
+        'text' => ['name'],
         'textarea' => ['content', 'keywords'],
+        'radio' => ['visible'],
+        'select' => ['menu_position', 'parent_id'],
+        'img' => ['img'],
+        'gallery_img' => ['gallery_img'],
+    ];
+
+    private $translate = [
+        'name' => ['Название', 'Не более 100 символов'],
+        'keywords' => ['Ключевые слова', 'Не более 70 символов'],
+        'content' => ['Контент', ''],
+    ];
+
+    private $radio = [
+        'visible' => ['Нет', 'Да', 'default' => 'Да'],
+    ];
+
+    private $rootItems = [
+        'name' => 'Корневая',
+        'tables' => ['articles'],
+    ];
+
+    private $blockNeedle = [
+        'vg-rows' => [],
+        'vg-img' => ['img'],
+        'vg-content' => ['content', 'keywords'],
+    ];
+
+    private $validation = [
+        'name' => ['empty' => true, 'trim' => true,],
+        'price' => ['int' => true,],
+        'login' => ['empty' => true, 'trim' => true,],
+        'password' => ['crypt' => true, 'empty' => true],
+        'keywords' => ['count' => 70, 'trim' => true],
+        'description' => ['count' => 160, 'trim' => true],
     ];
 
     private $expansion = 'core/admin/expansion/';
+
+    private $messages = 'core/base/messages/';
 
     /**
      * Метод получения свойства обьекта

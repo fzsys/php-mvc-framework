@@ -14,3 +14,54 @@ Fault:03-12-2019 10:53:36 - Ошибка в SQL запросе: SHOW COLUMNS FRO
 file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
 In line 42
 
+Fault:08-12-2019 19:20:06 - Ошибка в SQL запросе: SHOW COLUMNS FROM teachers - 0 
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 40
+
+Fault:10-12-2019 8:09:54 - Ошибка в SQL запросе: SELECT * FROM information_schema.KEY_COLUMN_USAGE 
+                WHERE TABLE_SCHEMA = mvc AND TABLE_NAME = articles
+                CONSTRAINT_NAME <> 'PRIMARY' AND REFERENCED_TABLE_NAME IS NOT NULL - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'CONSTRAINT_NAME <> 'PRIMARY' AND REFERENCED_TABLE_NAME IS NOT NULL' at line 3
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 40
+
+Fault:10-12-2019 8:10:36 - Ошибка в SQL запросе: SELECT * FROM information_schema.KEY_COLUMN_USAGE 
+                WHERE TABLE_SCHEMA = 'mvc' AND TABLE_NAME = 'articles'
+                CONSTRAINT_NAME <> 'PRIMARY' AND REFERENCED_TABLE_NAME IS NOT NULL - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'CONSTRAINT_NAME <> 'PRIMARY' AND REFERENCED_TABLE_NAME IS NOT NULL' at line 3
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 40
+
+Fault:10-12-2019 8:13:28 - Ошибка в SQL запросе: SELECT COLUMN_NAME, REFERENCED_TABLE_NAME, REFERENCED_COLUMN_NAM
+                FROM information_schema.KEY_COLUMN_USAGE 
+                WHERE TABLE_SCHEMA = 'mvc' AND TABLE_NAME = 'articles' AND
+                CONSTRAINT_NAME <> 'PRIMARY' AND REFERENCED_TABLE_NAME IS NOT NULL - 1054 Unknown column 'REFERENCED_COLUMN_NAM' in 'field list'
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 40
+
+Fault:15-12-2019 8:53:26 - Ошибка в SQL запросе: SELECT teachers.id as id,teachers.name,teachers.content,teachers.parent_id FROM teachers   ORDER BY teachers.parent_id ASC,teachers.menu_position ASC  - 1054 Unknown column 'teachers.content' in 'field list'
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 40
+
+Fault:15-12-2019 9:39:51 - Ошибка в SQL запросе: INSERT INTO teachers ( VALUES  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES' at line 1
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 40
+
+Fault:15-12-2019 13:42:05 - Ошибка в SQL запросе: INSERT INTO teachers (name,img' VALUES ('Vika','2.png'),('Natalia','3.png') - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' VALUES ('Vika','2.png'),('Natalia','3.png')' at line 1
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 40
+
+Fault:15-12-2019 13:54:04 - Ошибка в SQL запросе: INSERT INTO teachers (name,img,menu_position) VALUES ('Vika','2.png','2'),('Natalia','3.png',NULL,NULL) - 1136 Column count doesn't match value count at row 2
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 40
+
+Fault:15-12-2019 13:59:27 - Ошибка в SQL запросе: INSERT INTO teachers (name,menu_position,img) VALUES ('Vika123','2','1.jpg'' - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''1.jpg''' at line 1
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 40
+
+Fault:15-12-2019 14:00:32 - Ошибка в SQL запросе: INSERT INTO teachers (name,menu_position,img) VALUES ('Vika123','2','1.jpg'' - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''1.jpg''' at line 1
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 40
+
+Fault:15-12-2019 14:03:56 - Ошибка в SQL запросе: INSERT INTO teachers (name,menu_position,gallery_img) VALUES ('Vika12453','2','[\"5.jpg\",\"6.jpg\"]') - 1054 Unknown column 'gallery_img' in 'field list'
+file C:\OSPanel\domains\mvc\public\core\base\models\BaseModel.php
+In line 40
+

@@ -14,6 +14,7 @@ header('Content-type:text/html;charset=utf-8');
  */
 session_start();
 
+
 /**
  * Подключаем конфиг для хранения базовых настроек
  */
@@ -23,7 +24,7 @@ require_once 'config.php';
  * Подключаем конфиг для хранения всех внутренних настроек (роутниг, доступы, пути к шаблонам)
  */
 require_once 'core/base/settings/internal_settings.php';
-
+require_once 'libraries/functions.php';
 /**
  * Подключаем неймспейсы
  */

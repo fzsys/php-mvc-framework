@@ -47,6 +47,8 @@ abstract class BaseController
     protected $styles;
     protected $scripts;
 
+    protected $userId;
+
     /**
      * Метод, вызывающий метод request в контексте управляющего контроллера
      */
