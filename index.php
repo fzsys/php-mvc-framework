@@ -32,6 +32,8 @@ require_once 'libraries/functions.php';
 use core\base\exceptions\DbException;
 use core\base\exceptions\RouteException;
 use core\base\controllers\RouteController;
+use core\base\settings\Settings;
+use core\base\settings\ShopSettings;
 
 /**
  * Запускаем роутинг

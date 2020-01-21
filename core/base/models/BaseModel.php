@@ -265,7 +265,7 @@ abstract class BaseModel extends BaseModelMethods
                     unset($set['fields'][$key]);
                 }
             }
-            
+
             $fields = [];
 
             foreach ($set['fields'] as $field) {
@@ -285,10 +285,22 @@ abstract class BaseModel extends BaseModelMethods
         }
 
         return $this->query($query, 'u');
-
-
     }
 
+    final public function showTables()
+    {
+        $query = 'SHOW TABLES';
+        $tables = $this->query($query);
 
+        $table_arr = [];
+
+        if ($tables) {
+            foreach ($tables as $table) {
+                $table_arr[] = reset($table);
+            }
+        }
+
+        return $table_arr;
+    }
 }
 

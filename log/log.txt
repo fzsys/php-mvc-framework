@@ -74,3 +74,7 @@ Fault:29-12-2019 17:13:11 - Class core\admin\controllers\Add%3EController does n
 file C:\OSPanel\domains\mvc\public\core\base\controllers\BaseController.php
 In line 69
 
+Fault:01-01-2020 14:12:42 - Class core\user\controllers\Robots.txtController does not exist
+file C:\OSPanel\domains\mvc\public\core\base\controllers\BaseController.php
+In line 69
+
